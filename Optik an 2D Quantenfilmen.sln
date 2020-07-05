@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Optik an 2D Quantenfilmen", "Optik an 2D Quantenfilmen\Optik an 2D Quantenfilmen.vcxproj", "{A8D7B30E-57A9-49D6-A445-720D0B040FF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8D7B30E-57A9-49D6-A445-720D0B040FF3}.Debug|x64.ActiveCfg = Debug|x64
+		{A8D7B30E-57A9-49D6-A445-720D0B040FF3}.Debug|x64.Build.0 = Debug|x64
+		{A8D7B30E-57A9-49D6-A445-720D0B040FF3}.Debug|x86.ActiveCfg = Debug|Win32
+		{A8D7B30E-57A9-49D6-A445-720D0B040FF3}.Debug|x86.Build.0 = Debug|Win32
+		{A8D7B30E-57A9-49D6-A445-720D0B040FF3}.Release|x64.ActiveCfg = Release|x64
+		{A8D7B30E-57A9-49D6-A445-720D0B040FF3}.Release|x64.Build.0 = Release|x64
+		{A8D7B30E-57A9-49D6-A445-720D0B040FF3}.Release|x86.ActiveCfg = Release|Win32
+		{A8D7B30E-57A9-49D6-A445-720D0B040FF3}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {200B81C5-03E4-4BB8-8EA3-DD29B3FAA0B5}
+	EndGlobalSection
+EndGlobal
