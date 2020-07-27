@@ -48,8 +48,8 @@ int main()
 
 	// Werte berechnen und in Datei speichern
 	calcAndSave(file, _EV(1e-3), _EV(1e-2), _EV(1e-5), 9, _EV(1e-7), toleranz);
-	calcAndSave(file, _EV(1e-2), _EV(1e-1), _EV(1e-5), 90, _EV(1e-6), toleranz);
-	calcAndSave(file, _EV(0.110), _EV(0.130), _EV(1e-5), 10, _EV(1e-5), toleranz);
+	calcAndSave(file, _EV(1e-2), _EV(0.110), _EV(1e-5), 100, _EV(1e-6), toleranz);
+	calcAndSave(file, _EV(0.110), _EV(0.160), _EV(1e-5), 25, _EV(1e-5), toleranz);
 
 	// Datei schließen
 	fclose(file);
@@ -57,7 +57,7 @@ int main()
 
 // ========================= Funktionen =============================
 
-// Dicke des Potentialtops berechnen
+// Dicke des Potenzialtops berechnen
 double calculateD(double m_w, double m_b, double E_n, double V_0)
 {
 	return ((2.0 * planckRed) / (sqrt(2.0 * m_w * E_n)) * atan(sqrt((m_w * (V_0 - E_n)) / (m_b * E_n))));
@@ -110,7 +110,7 @@ double* calculateHoleEnergy(double d_e, double V_0e, double E_nh, double m_wh, d
 	return returnArray;
 }
 
-// Light und Heavy Hole Energie, sowie Dicke des Potentialtopfs berechnen und in Datei speichern
+// Light und Heavy Hole Energie, sowie Dicke des Potenzialtopfs berechnen und in Datei speichern
 void calcAndSave(FILE* file, double startE_ne, double endE_ne, double startE_nh, int stepsE_ne, double stepSizeE_nh, double toleranz)
 {
 	// Konstanten
