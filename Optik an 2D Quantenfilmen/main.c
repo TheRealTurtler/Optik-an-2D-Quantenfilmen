@@ -1,13 +1,31 @@
-#include "main.h"
+#define _CRT_SECURE_NO_WARNINGS
+
+// ========================== Includes ==============================
+
+#include <stdio.h>
+#include <math.h>
+
+// ======================== Deklarationen ===========================
+
+double calculateD(double m_w, double m_b, double E_n, double V_0);
+double* calculateHoleEnergy(double d_e, double V_0e, double E_nh, double m_wh, double m_bh, double stepSizeE_nh, double toleranz);
+double* calculateHoleEnergy(double d_e, double V_0e, double E_nh, double m_wh, double m_bh, double toleranz);
+void calcAndSave(FILE* file, double startE_ne, double endE_ne, double startE_nh, int steps, double stepSize, double toleranz);
 
 // =========================== Macros ===============================
 
+// Energie von eV zu J umrechnen
 #define _EV(x) ((x) * eVtoJ)
 
 // ====================== Phys. Konstanten ==========================
 
+// reduziertes Plamck'sches Wirkungsquantum
 const double planckRed = 1.054571817e-34;
+
+// Ruhemasse eines Elektrons
 const double m_0 = 9.1093837015e-31;
+
+// Umrechnungskonstante für eV zu J
 const double eVtoJ = 1.602176e-19;
 
 // ============================ Main ================================
@@ -109,7 +127,7 @@ void calcAndSave(FILE* file, double startE_ne, double endE_ne, double startE_nh,
 	double* array;
 
 	// Berechnung und Ausgabe in Datei
-	for (E_ne; E_ne < endE_ne; E_ne += (endE_ne - startE_ne) / stepsE_ne)
+	for (E_ne; E_ne <= endE_ne; E_ne += (endE_ne - startE_ne) / stepsE_ne)
 	{
 		// Breite für Elektronen berechnen
 		double d_e = calculateD(m_we, m_be, E_ne, V_0e);
