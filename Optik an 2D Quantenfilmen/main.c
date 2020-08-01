@@ -19,7 +19,7 @@ void calcAndSave(FILE* file, double startE_ne, double endE_ne, double startE_nh,
 
 // ====================== Phys. Konstanten ==========================
 
-// reduziertes Plamck'sches Wirkungsquantum
+// reduziertes Planck'sches Wirkungsquantum
 const double planckRed = 1.054571817e-34;
 
 // Ruhemasse eines Elektrons
